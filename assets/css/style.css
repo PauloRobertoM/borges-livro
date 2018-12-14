@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'Poetsen';
+    src: url('../fonts/PoetsenOne-Regular.ttf');
+}
+* {
+    outline: none;
+}
+a {
+    text-decoration: none!important;
+    cursor: pointer!important;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+.container {
+    max-width: 1200px!important;
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+.conheca {
+    background: url(../images/conheca.png) no-repeat;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.conheca .borda-img {
+    -webkit-box-shadow: -40px 10px 30px 2px rgba(0,0,0,0.40);
+    -moz-box-shadow: -40px 10px 30px 2px rgba(0,0,0,0.40);
+    box-shadow: -40px 10px 30px 2px rgba(0,0,0,0.40);
+    width: 399px;
+    height: 481px;
+    transform: rotate(-10deg);
+    float: right;
+}
+.conheca img {
+    float: right;
+    transform: rotate(4.8deg);
+    position: relative;
+    top: -15px;
+}
+.conheca .conteudo {
+    padding: 0 50px;
+}
+.conheca h2 {
+    font-size: 36px;
+    font-family: 'Poetsen';
+    color: #fecb01;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.conheca p {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.conheca a {
+    font-size: 20px;
+    font-weight: bold;   
+    color: #292929;
+    text-transform: uppercase;
+    background: #dfc623;
+    padding: 15px 40px;
+    display: table;
+}
+.conheca a:hover {
+    color: #dfc623;
+    background: #292929;
+}
+
+.comprar {
+    background: #f4f3f3;
+    width: 100%;
+    height: 688px;
+    margin-top: -35px;
+    display: flex;
+    align-items: center;
+}
+.comprar h2 {
+    font-size: 36px;
+    font-family: 'Poetsen';
+    color: #07207c;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.comprar p {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.comprar .homem {
+    position: absolute;
+    right: 0;
+    margin-top: -7px;
+}
+.carro {
+    width: 100%;
+    position: relative;
+    top: 70px;
+    left: -120px;
+}
+
+.biografia {
+    padding: 130px 0;
+}
+.biografia .itens {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.biografia h2 {
+    font-size: 30px;
+    font-family: 'Poetsen';
+    color: #00a79d;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.biografia p {
+    font-size: 16px;
+    color: #4d4e4e;
+    margin-bottom: 0;
+}
+.biografia figcaption {
+    text-align: center;
+    background-color: rgba(0,167,157,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.biografia [class^=imghvr-fade]:hover>img {
+    opacity: 1!important;
+}
+.biografia [class*=" imghvr-"],
+.biografia [class^=imghvr-] {
+    background-color: transparent;
+}
+.biografia h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.biografia .modal h2 {
+    text-align: center;
+}
+.biografia .modal p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: url(../images/footer.jpg) no-repeat;
+    width: 100%;
+    height: 397px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+footer h2 {
+    font-size: 36px;
+    font-family: 'Poetsen';
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+footer input {
+    font-size: 18px;
+    color: #4f4e4e;
+    height: 50px!important;
+}
+footer ::-webkit-input-placeholder {
+    font-size: 18px;
+    color: #4f4e4e;
+}
+footer :-moz-placeholder {
+    font-size: 18px;
+    color: #4f4e4e;
+}
+footer ::-moz-placeholder {
+    font-size: 18px;
+    color: #4f4e4e;
+}
+footer :-ms-input-placeholder {
+    font-size: 18px;
+    color: #4f4e4e;
+}
+footer button {
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    background: #ec0031;
+    border: none;
+}
+footer button:hover {
+    color: #ec0031;
+    background: #fff;
+}
+footer img {
+    position: absolute;
+    top: -241px;
+    left: 25%;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 767px) {
+    .conheca {
+        min-height: 780px;
+        height: 100%;
+        background-size: cover;
+    }
+    .conheca .borda-img {
+        width: 200px;
+        height: 215px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: relative;
+        left: -20px;
+    }
+    .conheca img {
+        top: -7px;
+        left: -25px;
+        width: 93%;
+    }
+    .conheca .conteudo {
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    .comprar {
+        height: 520px;
+    }
+    .carro,
+    .comprar .homem {
+        display: none;
+    }
+    .biografia {
+        padding: 80px 0;
+    }
+    .biografia .itens {
+        display: block;
+    }
+    .biografia .item {
+        margin-bottom: 50px;
+    }
+    footer {
+        background-size: cover;
+        height: 100%;
+        min-height: 397px;
+        padding: 50px 0;
+    }
+    footer h2 {
+        font-size: 28px;
+    }
+    footer img {
+        display: none;
+    }
+    footer input {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .conheca .borda-img {
+        width: 95%;
+        height: auto;
+    }
+    .conheca img {
+        top: 20px;
+        width: 105%;
+    }
+    .conheca .conteudo {
+        padding: 0 0 0 10px;
+    }
+    .comprar {
+        height: 540px;
+    }
+    .comprar .homem {
+        margin-top: 5px;
+        width: 400px;
+    }
+    .carro {
+        width: 290px;
+        position: relative;
+        top: 250px;
+        left: -100px;
+    }
+    .biografia .item {
+        width: 30%;
+    }
+    footer h2 {
+        font-size: 26px;
+    }
+    footer img {
+        left: 10%;
+    }
+}
